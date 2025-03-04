@@ -1,0 +1,1355 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree';
+}
+
+body {
+    background-color: #252742;
+    color: #ffffff;
+
+}
+
+/* ================= TOP BANNER ================= */
+.top-banner {
+    background-color: #7a25ae;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 49px;
+  }
+  
+  .marquee-container {
+    width: 90%;
+    background-color: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee-container span {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .close-banner {
+    position: absolute;
+    right: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+/* ====== Navbar ====== */
+nav {
+    background-color: #252742;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.nav-items li {
+    position: relative;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px;
+    display: block;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #252742;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    top: 40px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    display: block;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* ================= Section hero ================= */
+
+.hero-container {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #252742;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ellipse-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+.ellipse-container h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: clamp(6.3rem, 2vw, 6.5rem);
+    font-weight: normal;
+    font-weight: 500;
+    text-shadow: 20px 10px 4px #00000040;
+    opacity: 0.9;
+}
+
+.ellipse{
+    display: flex;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ellipse-2{
+    display: flex;
+    padding-left: 2em;
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.himtika-merupakan {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 400;
+    max-width: 860px;
+    text-align: center;
+    line-height: 32px;
+    color: #ffffff;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Button */
+.frame {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.btn {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 100px;
+    border: #353767;
+    background-color: #353767;
+    padding: 0.6em 1em;
+    font-family: "Figtree";
+    font-style: normal;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    cursor: pointer;
+    font-weight: 400;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .btn:hover {
+    color: #ffffff;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #1C1E32;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+
+.frame .text-wrapper {
+    position: relative;
+    font-family: "Figtree", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: clamp(1rem, 2vw, 1.28rem);
+    font-style: normal;
+  }
+
+.frame .overlap-group {
+    display: flex;
+    justify-content: center;
+}
+
+.figure {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 90px;
+    border: 2px solid;
+    border-color: #00aee2;
+    background-image: url('/image/openg.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.figure-2 {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-left: -15px;
+    border-radius: 90px;
+    border: 2px solid;
+    border-color: #00aee2;
+    background-image: url('/image/mahes.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.figure-3 {
+    width: 44px;
+    height: 44px;
+    margin: auto;
+    margin-left: -12px;
+    border-radius: 90px;
+    border: 2px solid;
+    border-color: #00aee2;
+    background-image: url('/image/ferdi.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.text-wrapper-2 {
+    display: flex;
+    font-size: clamp(1rem, 2vw, 1.28rem);
+    font-weight:400;
+    color: #fffb00;
+}
+
+.text-wrapper-3 {
+    display: flex;
+    font-size: clamp(1rem, 2vw, 1.05rem);
+    color: #ffffff;
+}
+
+/* Mark text */
+.mark-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mark-container .mark{
+    font-size: clamp(1rem, 2vw, 1.28rem);
+    padding: 1em;
+    color: #ffffff;
+    min-width: 60px;
+}
+
+.span {
+    font-weight: bold;
+    color: #b3ff00;
+}
+
+
+/* ================= Section event-yang-diadakan ================= */
+.section-event {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #252742;
+}
+.event-yang-diadakan {
+    margin: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.event-yang-diadakan h1 {
+    position: relative;
+    font-family: "Figtree", Helvetica;
+    font-size: clamp(2.56rem, 2vw, 2.56rem);
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    letter-spacing: -0.800000011920929px;
+    line-height: 44px;
+    margin: 40px;
+    white-space: nowrap;
+}
+
+.event-yang-diadakan .frame {
+    background-color: #1c1e32;
+    padding: 4em 12em;
+    border-radius: 80px;
+    overflow: hidden;
+    box-shadow: 8px 9px 4px #00000099;
+    margin-bottom: 60px;
+}
+
+.paragraph {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: clamp(1.90rem, 2vw, 1.90rem);
+    max-width: 800px;
+    gap: 30px;
+    flex-wrap: wrap;
+} 
+.paragraph p:hover {
+  cursor: pointer;
+  color: #653384;
+  transition: color 0.3s ease-in-out;
+}
+/* ================ Section sapaan kahim-wahim event ================= */
+.sapaan-kahim-wahim {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sapaan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1350px;
+    position: relative;
+}
+
+.sapaan-text {
+    flex: 1;
+    max-width: 40%;
+    margin-left: 5em;
+    text-align: left;
+}
+.sapaan-text h1 {
+    font-size: clamp(4.2rem, 2vw, 4.7rem);
+    padding-bottom: 0.5em;
+}
+
+.sapaan-text p {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    padding-bottom: 2em;
+    max-width: 510px;
+}
+
+.btn-sapaan {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 99px;
+    border: #353767;
+    background-color: #353767;
+    padding: 0.6em 1em;
+    font-family: "Figtree";
+    font-style: normal;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    cursor: pointer;
+    font-weight: 400;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .btn-sapaan:hover {
+    color: #ffffff;
+  }
+  
+  .btn-sapaan::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #1C1E32;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn-sapaan:hover::before {
+    width: 160%;
+  }
+
+.sapaan-image {
+    flex: 1;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.sapaan-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sapaan-overlay {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    hsla(236, 33%, 30%, 0) 0%,  
+    hsla(236, 33%, 18%, 0.7) 60%,
+    hsla(240, 27%, 15%, 0.9) 100% 
+  );
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* ================= Section aplikasi baru ================= */
+.frame-apk {
+  padding-top: 30px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  height: 756px;
+  background-color: #1C1E32;
+}
+
+.frame_aplikasi_baru{
+  position: relative;
+  width: 1210px;
+  margin: 74px;
+  height: 562px;
+  border-radius: 65px;
+  overflow: hidden;
+  background-image: url('image/Frame_Aplikasi_baru.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.frame-text{
+  position: absolute;
+  padding: 5em 0em 0em 32em;
+}
+.frame-text h1{
+  font-weight: 500;
+  font-size: clamp(4.4rem, 2vw, 4.41rem);
+}
+.frame-text h2{
+  font-weight: 500;
+  font-size: clamp(3.7rem, 2vw, 3.77rem);
+}
+.frame-text p{
+  margin-top: 2em;
+  max-width: 590px;
+  font-size: clamp(1.56rem, 2vw, 1.56rem);
+}
+
+.container_noselect {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  transition: 200ms;
+  justify-content: center;
+  margin-top: 40%;
+  margin-left: 70%;
+}
+
+#card {
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: 700ms;
+  background-image: url("image/hp.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#card::before {
+  content: '';
+  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(166, 11, 255) 46%, rgb(255, 204, 112) 100%);
+  filter: blur(2rem);
+  opacity: 30%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transition: opacity 1s ease-in-out 300ms, transform 1s ease-in-out 300ms;
+}
+.container_noselect:hover #card::before {
+  content: '';
+  opacity: 50%;
+}
+.container_noselect:not(:hover) #card::before {
+  opacity: 0; 
+  transition-delay: 0ms; 
+}
+.tracker {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.tracker:hover {
+  cursor: pointer;
+}
+
+.tracker:hover ~ #card {
+  transition: 300ms;
+  filter: brightness(1.1);
+}
+.canvas {
+  perspective: 800px;
+  inset: 0;
+  z-index: 200;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5"
+    "tr-6 tr-7 tr-8 tr-9 tr-10"
+    "tr-11 tr-12 tr-13 tr-14 tr-15"
+    "tr-16 tr-17 tr-18 tr-19 tr-20"
+    "tr-21 tr-22 tr-23 tr-24 tr-25";
+}
+
+.tr-1 {
+  grid-area: tr-1;
+}
+
+.tr-2 {
+  grid-area: tr-2;
+}
+
+.tr-3 {
+  grid-area: tr-3;
+}
+
+.tr-4 {
+  grid-area: tr-4;
+}
+
+.tr-5 {
+  grid-area: tr-5;
+}
+
+.tr-6 {
+  grid-area: tr-6;
+}
+
+.tr-7 {
+  grid-area: tr-7;
+}
+
+.tr-8 {
+  grid-area: tr-8;
+}
+
+.tr-9 {
+  grid-area: tr-9;
+}
+
+.tr-10 {
+  grid-area: tr-10;
+}
+
+.tr-11 {
+  grid-area: tr-11;
+}
+
+.tr-12 {
+  grid-area: tr-12;
+}
+
+.tr-13 {
+  grid-area: tr-13;
+}
+
+.tr-14 {
+  grid-area: tr-14;
+}
+
+.tr-15 {
+  grid-area: tr-15;
+}
+
+.tr-16 {
+  grid-area: tr-16;
+}
+
+.tr-17 {
+  grid-area: tr-17;
+}
+
+.tr-18 {
+  grid-area: tr-18;
+}
+
+.tr-19 {
+  grid-area: tr-19;
+}
+
+.tr-20 {
+  grid-area: tr-20;
+}
+
+.tr-21 {
+  grid-area: tr-21;
+}
+
+.tr-22 {
+  grid-area: tr-22;
+}
+
+.tr-23 {
+  grid-area: tr-23;
+}
+
+.tr-24 {
+  grid-area: tr-24;
+}
+
+.tr-25 {
+  grid-area: tr-25;
+}
+
+.tr-1:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-2:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-3:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-4:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-5:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-6:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-7:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-8:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-9:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-10:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-11:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-12:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-13:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-14:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-15:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-16:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-17:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-18:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-19:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-20:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-21:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-22:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-23:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-24:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-25:hover ~ #card {
+  transition: 125ms ease-in-out;
+  transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+   /* iOS Safari */
+  -webkit-user-select: none;
+   /* Safari */
+   /* Konqueror HTML */
+  -moz-user-select: none;
+   /* Old versions of Firefox */
+  -ms-user-select: none;
+   /* Internet Explorer/Edge */
+  user-select: none;
+   /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+/* ================= Section hi-code ================= */
+.hi-code {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1C1E32;
+    width: 100%;
+    padding: 9em;
+}
+
+.hi-code .heading {
+    position: relative;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: clamp(65px, 2vw, 65px);
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+ .heading p {
+    font-size: clamp(1.26rem, 2vw, 1.26rem);
+    font-style: normal;
+    font-weight: 100;
+    margin-bottom: 30px;
+ }
+.row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.box {
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+    min-width: 0;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-div, .text-div3{
+    position: absolute;
+    top: 65%;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-div h1, .text-div3 h1{
+    font-size: clamp(2.5rem, 2vw, 2.5rem);
+    font-weight: 500;
+    padding-bottom: 0.5em;
+}
+.text-div p, .text-div3 p{
+    font-size: clamp(1.2rem, 2vw, 1.3rem);
+    font-weight: 100;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.text-div2, .text-div4 {
+    position: absolute;
+    top: 25%;
+    width: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-div2 h1, .text-div4 h1{
+    font-size: clamp(2.5rem, 2vw, 2.5rem);
+    font-weight: 500;
+    padding-bottom: 0.5em;
+}
+.text-div2 p, .text-div4 p{
+    font-size: clamp(1.2rem, 2vw, 1.3rem);
+    font-weight: 100;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.hi-code_btn:active,
+.hi-code_btn:hover {
+  outline: 0;
+}
+
+.hi-code_btn span {
+  background-color: #ffffff;
+  padding: 12px 10px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.hi-code_btn:hover span {
+  background: none;
+}
+
+.hi-code_btn:active {
+  transform: scale(0.9);
+}
+
+.hi-code_btn{
+  align-items: center;
+  background-image: linear-gradient(144deg, #BD63D1, #402DAE 50%);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  font-family: "Figtree";
+  min-width: auto;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.row:nth-child(1) .box:first-child { flex: 45%; }
+.row:nth-child(1) .box:last-child { flex: 55%; }
+.row:nth-child(2) .box:first-child { flex: 55%; }
+.row:nth-child(2) .box:last-child { flex: 45%; }
+
+/* ================= Section FAQ ================= */
+.faq-container {
+    background-color: #1C1E32;
+    font-family: 'Figtree';
+    text-align: center;
+    min-height: 660px;
+    position: relative;
+}
+
+.faq-heading {
+    font-size: 3.8rem;
+    font-weight: 500;
+    color: white;
+    padding: 20px;
+}
+
+/* Grid Layout untuk FAQ */
+.faq-wrapper {  
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 900px;
+    margin: auto;
+    align-items: start; 
+    gap: 35px;
+}
+
+details {
+    background: #1E1925;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style untuk summary */
+summary {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+summary::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url('/image/button_arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(-180deg);
+}
+
+/* Efek dropdown */
+.faq-answer {
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    padding: 0 15px;
+    color: #ddd;
+    will-change: height, opacity, transform;
+}
+
+details[open] .faq-answer {
+    max-height: 500px;;
+    max-width: 360px;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 10px 1px;
+}
+
+.faq-container .faq-overlay{
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    hsla(235, 28%, 15%, 0.9) 0%, 
+    hsla(233, 28%, 20%, 0.4) 40%, 
+    hsla(233, 28%, 20%, 0.8) 90%
+  );
+  z-index: 10;
+  pointer-events: none;
+}
+
+footer {
+  background: #252742;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+
+/* Jika ingin footer tetap di bawah saat konten sedikit */
+.footer-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+@media (max-width: 768px) {
+    .hero-container {
+        padding-top: 1.5em;
+        text-align: center;
+    }
+
+    .ellipse-container {
+        flex-direction: row;
+    }
+
+    .ellipse-container h1 {
+        font-size: clamp(2rem, 6vw, 2.2rem);
+        margin-left: -22px;
+        margin-right: -22px;
+        text-shadow: 10px 5px 3px #00000040;
+    }
+
+    .ellipse, .ellipse-2 {
+        margin: -2px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .himtika-merupakan {
+        font-size: 0.85rem;
+        line-height: 24px;
+        max-width: 90%;
+    }
+
+    .frame {
+        padding: 2%;
+        flex-direction: row;
+    }
+    
+    .frame-container {
+        margin: 0em 0.6em;
+    }
+    .btn {
+        font-size: clamp(0.6rem, 3vw, 1rem); 
+    }
+
+    .text-wrapper-2 {
+        font-size: 0.5rem;
+        margin : -5px;
+    }
+
+    .text-wrapper-3 {
+        font-size: 0.5rem;
+    }
+    
+    .figure, .figure-2, .figure-3 {
+        width: 25px;
+        height: 25px;
+        margin-left: -10px;
+    }
+    .mark-container {
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+    }
+    
+    .mark-container .mark{
+        padding: 0.5em;
+        font-size:clamp(0.78rem, 3vw, 0.79rem);
+    }
+
+    /* ================= Section event-yang-diadakan ================= */
+    .event-yang-diadakan .frame {
+        margin : 30px;
+        padding: 2.5em 2em;
+        border-radius: 90px;
+    }
+    .event-yang-diadakan h1 {
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+    
+    .paragraph {
+        font-size: 0.7rem;
+        gap: 15px;
+    }
+
+     /* ================= Section sapaan kahim wahim ================= */
+    .sapaan-container{
+        flex-direction: column;
+    }
+    .sapaan-text {
+        max-width: 100%;
+        margin: 0 auto 2em;
+        text-align: center;
+        line-height: 32px;
+    }
+
+    .sapaan-text h1 {
+        font-size: 2rem;
+    }
+
+    .sapaan-text p {
+        font-size: 1rem;
+        padding-bottom: 1.5em;
+    }
+
+    .sapaan-text .button {
+        padding: 0.8em 1.5em;
+        font-size: 1rem;
+    }
+
+    .sapaan-image {
+        width: 100%;
+    }
+    .sapaan-image  img{
+        max-width: 500px;
+        margin-right: 104px;
+    }
+    /* ================= Section aplikasi baru ================= */
+    .frame-apk {
+        margin-bottom: -100px;
+        width: 100%;
+    }
+    .frame_aplikasi_baru {
+        text-align: center;
+        border-radius: 50px;
+        margin: 2rem;
+    }
+    .frame-text {
+        justify-content: center;
+        margin-top: 1em;
+        padding: 1em;
+        width: 100%;
+    }
+    .frame-text h1 {
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    .frame-text h2 {
+        font-size: 1.2rem;
+        white-space: nowrap;
+        margin-bottom:1em;
+
+    }
+    .frame-text p {
+        max-width: 200px;
+        margin: 0 auto;
+        font-size: 0.8rem;
+    }
+
+    .container_noselect {
+      width: 100px;
+      height: 400px;
+      margin-top: 200%;
+      margin-left: 80%;
+    }
+
+    #card {
+      width: 150px;
+      height: 300px;
+    }
+    /* ================= Section hi-code ================= */
+    .hi-code{
+        align-items: center;
+    }
+    .heading {
+        width: 300%;
+        text-align: center;
+    }
+    .heading h1 {
+        font-size: clamp(25px, 3vw, 30px);
+    }
+    .heading p {
+        font-size: clamp(10px, 3vw, 20px);
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 250%;    
+    }
+    .text-div h1,.text-div2 h1, .text-div3 h1, .text-div4 h1{
+        font-size: clamp(14px, 3vw, 16px); /* Font tetap proporsional */
+    }
+    .text-div p,.text-div2 p, .text-div3 p, .text-div4 p{
+        font-size: clamp(6px, 3vw, 7px);
+        line-height: normal; /* Font tetap proporsional */
+        max-width: 200px;
+    }
+    .hi-code_btn span {
+      padding: 2px 2px;
+    }
+    .hi-code_btn{
+      font-size: clamp(6px, 3vw, 7px);  
+    }
+    
+    /* ================= Section FAQ ================= */
+    .faq-wrapper {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .faq-heading {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: white;
+        padding: 20px;
+    }
+
+    summary {
+        font-size: 0.9rem;
+    }
+
+    summary::after {
+        width: 16px;
+        height: 16px;
+    }
+    .faq-container .faq-overlay{
+      position: absolute;
+      width: 100%;
+      height: 3%;
+    }
+}
+    
+
+
+
+
+@media (max-width: 1024px) {
+    /* ================= Section FAQ ================= */
+    .faq-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebih fleksibel */
+        gap: 20px; /* Kurangi jarak antar elemen */
+        max-width: 90%; /* Supaya tidak terlalu lebar */
+    }
+
+    summary {
+        font-size: 0.95rem; /* Sedikit perkecil ukuran font */
+    }
+
+    summary::after {
+        width: 18px;
+        height: 18px;
+    }
+}
