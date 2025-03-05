@@ -6,12 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Figtree';
-}
-
-body {
+  }
+  
+  body {
     background-color: #252742;
     color: #ffffff;
-
 }
 
 /* ================= TOP BANNER ================= */
@@ -404,7 +403,6 @@ nav {
 .sapaan-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1350px;
@@ -413,19 +411,20 @@ nav {
 
 .sapaan-text {
     flex: 1;
-    max-width: 40%;
-    margin-left: 5em;
+    max-width: 45%;
+    padding-left: 60px;
     text-align: left;
+    margin-bottom: 60px;
 }
 .sapaan-text h1 {
-    font-size: clamp(4.2rem, 2vw, 4.7rem);
-    padding-bottom: 0.5em;
+    font-size: clamp(3.8rem, 2vw, 4rem);
+    
 }
 
 .sapaan-text p {
     font-size: clamp(1rem, 2vw, 1.4rem);
-    padding-bottom: 2em;
-    max-width: 510px;
+    padding-bottom: 20px;
+    padding-top: 35px;
 }
 
 .btn-sapaan {
@@ -471,7 +470,7 @@ nav {
     flex: 1;
     max-width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .sapaan-image img {
@@ -500,51 +499,62 @@ nav {
   position: relative;
   justify-content: center;
   display: flex;
-  height: 756px;
+  height: 650px;
   background-color: #1C1E32;
 }
 
 .frame_aplikasi_baru{
+  display: flex;
   position: relative;
-  width: 1210px;
+  width: 100%;
+  max-width: 1350px;
   margin: 74px;
-  height: 562px;
+  height: 500px;
   border-radius: 65px;
   overflow: hidden;
   background-image: url('image/Frame_Aplikasi_baru.png');
   background-size: cover;
   background-position: 50% 50%;
   object-fit: cover;
-  display: flex;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .frame-text{
-  position: absolute;
-  padding: 5em 0em 0em 32em;
+  flex: 1;
+  max-width: 60%;
+  position: relative;
+  text-align: left;
 }
 .frame-text h1{
   font-weight: 500;
-  font-size: clamp(4.4rem, 2vw, 4.41rem);
+  font-size: clamp(4.2rem, 2vw, 4.4rem);
 }
 .frame-text h2{
   font-weight: 500;
-  font-size: clamp(3.7rem, 2vw, 3.77rem);
+  font-size: clamp(3.5rem, 2vw, 3.77rem);
 }
 .frame-text p{
   margin-top: 2em;
   max-width: 590px;
-  font-size: clamp(1.56rem, 2vw, 1.56rem);
+  font-size: clamp(1.5rem, 2vw, 1.56rem);
 }
 
-.container_noselect {
+.frame-img{
+  flex: 1;
+  max-width: 40%;
+  justify-content: center;
+  align-items: center;
   position: relative;
+}
+.container_noselect {
   width: 200px;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
   height: 400px;
   transition: 200ms;
-  justify-content: center;
-  margin-top: 40%;
-  margin-left: 70%;
 }
 
 #card {
@@ -850,8 +860,10 @@ nav {
    /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
+
+
 /* ================= Section hi-code ================= */
-.hi-code {
+.container-hi-code {
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -861,7 +873,7 @@ nav {
     padding: 9em;
 }
 
-.hi-code .heading {
+.container-hi-code .heading {
     position: relative;
     text-align: center;
 }
@@ -878,7 +890,7 @@ nav {
     font-weight: 100;
     margin-bottom: 30px;
  }
-.row {
+.box-container {
     display: flex;
     width: 100%;
     gap: 20px;
@@ -904,23 +916,11 @@ nav {
 
 .text-div, .text-div3{
     position: absolute;
-    top: 65%;
+    top: 70%;
     width: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.text-div h1, .text-div3 h1{
-    font-size: clamp(2.5rem, 2vw, 2.5rem);
-    font-weight: 500;
-    padding-bottom: 0.5em;
-}
-.text-div p, .text-div3 p{
-    font-size: clamp(1.2rem, 2vw, 1.3rem);
-    font-weight: 100;
-    line-height: 32px;
-    margin-bottom: 10px;
-}
-
 .text-div2, .text-div4 {
     position: absolute;
     top: 25%;
@@ -928,16 +928,16 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.text-div2 h1, .text-div4 h1{
+.text-div h1, .text-div2 h1, .text-div3 h1, .text-div4 h1{
     font-size: clamp(2.5rem, 2vw, 2.5rem);
     font-weight: 500;
-    padding-bottom: 0.5em;
+    margin-bottom: 5px;
 }
-.text-div2 p, .text-div4 p{
+.text-div p, .text-div2 p, .text-div3 p, .text-div4 p{
     font-size: clamp(1.2rem, 2vw, 1.3rem);
     font-weight: 100;
-    line-height: 32px;
-    margin-bottom: 10px;
+    line-height: normal;
+    margin-bottom: 6px;
 }
 
 .hi-code_btn:active,
@@ -977,7 +977,7 @@ nav {
   max-width: 100%;
   font-family: "Figtree";
   min-width: auto;
-  padding: 3px;
+  padding: 2px;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
@@ -1110,6 +1110,7 @@ footer {
 
 
 @media (max-width: 768px) {
+  /* ================= Section hero ================= */
     .hero-container {
         padding-top: 1.5em;
         text-align: center;
@@ -1197,9 +1198,11 @@ footer {
     }
     .sapaan-text {
         max-width: 100%;
-        margin: 0 auto 2em;
+        padding: 0;
         text-align: center;
+        align-items: center;
         line-height: 32px;
+        margin: 0;
     }
 
     .sapaan-text h1 {
@@ -1208,6 +1211,7 @@ footer {
 
     .sapaan-text p {
         font-size: 1rem;
+        line-height: normal;
         padding-bottom: 1.5em;
     }
 
@@ -1220,8 +1224,8 @@ footer {
         width: 100%;
     }
     .sapaan-image  img{
-        max-width: 500px;
-        margin-right: 104px;
+        max-width: 200%;
+        margin-right: -80px;
     }
     /* ================= Section aplikasi baru ================= */
     .frame-apk {
@@ -1232,12 +1236,11 @@ footer {
         text-align: center;
         border-radius: 50px;
         margin: 2rem;
+        flex-direction: column;
     }
     .frame-text {
-        justify-content: center;
-        margin-top: 1em;
-        padding: 1em;
-        width: 100%;
+        padding-top: 20px;
+        text-align: center;
     }
     .frame-text h1 {
         font-size: 1.5rem;
@@ -1246,62 +1249,59 @@ footer {
     .frame-text h2 {
         font-size: 1.2rem;
         white-space: nowrap;
-        margin-bottom:1em;
-
     }
     .frame-text p {
         max-width: 200px;
-        margin: 0 auto;
         font-size: 0.8rem;
     }
-
     .container_noselect {
-      width: 100px;
+      width: 150px;
       height: 400px;
-      margin-top: 200%;
-      margin-left: 80%;
     }
-
     #card {
       width: 150px;
       height: 300px;
     }
     /* ================= Section hi-code ================= */
-    .hi-code{
+    .container-hi-code{
         align-items: center;
     }
     .heading {
-        width: 300%;
+        width: 390px;
         text-align: center;
     }
     .heading h1 {
-        font-size: clamp(25px, 3vw, 30px);
+        font-size: clamp(32px, 3vw, 37px);
     }
     .heading p {
-        font-size: clamp(10px, 3vw, 20px);
+        font-size: clamp(15px, 3vw, 20px);
+        max-width: 600px;
     }
 
-    .row {
+    .box-container {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 360%;
+        border: 2px solid red;
+        max-width: 300px;
     }
 
-    .box {
-        width: 250%;    
+    .text-div h1, .text-div2 h1, .text-div3 h1, .text-div4 h1{
+        font-size: clamp(25px, 3vw, 66px);
+        line-height: normal;
     }
-    .text-div h1,.text-div2 h1, .text-div3 h1, .text-div4 h1{
-        font-size: clamp(14px, 3vw, 16px); /* Font tetap proporsional */
-    }
-    .text-div p,.text-div2 p, .text-div3 p, .text-div4 p{
-        font-size: clamp(6px, 3vw, 7px);
-        line-height: normal; /* Font tetap proporsional */
-        max-width: 200px;
+    .text-div p, .text-div2 p, .text-div3 p, .text-div4 p{
+        font-size: clamp(11px, 3vw, 18px);
+        line-height: normal;
+        max-width: 400px;
+        min-width: 170px;
     }
     .hi-code_btn span {
-      padding: 2px 2px;
+      padding: 8px 6px;
     }
     .hi-code_btn{
-      font-size: clamp(6px, 3vw, 7px);  
+      font-size: clamp(10px, 3vw, 15px);  
     }
     
     /* ================= Section FAQ ================= */
