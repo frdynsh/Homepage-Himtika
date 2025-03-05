@@ -196,7 +196,7 @@
                     <p>Upgrade pengetahuan dan skill kamu di informatika<br>dengan Hi-Code!</p>
                 </div>
                 <div class="box-container">
-                    <div class="box">
+                    <div class="box" data-aos="fade-right" data-aos-offset="250">
                         <img src="image/CSS.png" alt="">
                         <div class="text-div">
                             <h1>Cascading Style Sheets.</h1>
@@ -207,7 +207,7 @@
                         </div>
                     </div>
                
-                    <div class="box">
+                    <div class="box" data-aos="fade-left" data-aos-delay="150"  data-aos-offset="250">
                         <img src="image/HTML.png" alt="">
                         <div class="text-div2">
                             <h1>Hypertext Markup Language.</h1>
@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 <div class="box-container">
-                    <div class="box">
+                    <div class="box" data-aos="fade-right"  data-aos-offset="300">
                         <img src="image/JS.png" alt="">
                         <div class="text-div3">
                             <h1>Javascript.</h1>
@@ -229,7 +229,7 @@
                             </button> 
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-left" data-aos-delay="200"  data-aos-offset="300">
                         <img src="image/C++.png" alt="">
                         <div class="text-div4">
                             <h1>C++</h1>
@@ -312,7 +312,9 @@
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init();
+            AOS.init({
+                once: true,
+            });
         </script>
         <script src="script.js"></script>
 </html>
