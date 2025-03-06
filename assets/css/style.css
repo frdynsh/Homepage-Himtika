@@ -267,7 +267,7 @@ nav {
     border-radius: 90px;
     border: 2px solid;
     border-color: #00aee2;
-    background-image: url('/image/openg.jpg');
+    background-image: url('/assets/image/figure.jpg');
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -279,7 +279,7 @@ nav {
     border-radius: 90px;
     border: 2px solid;
     border-color: #00aee2;
-    background-image: url('/image/mahes.jpg');
+    background-image: url('/assets/image/figure2.jpg');
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -291,7 +291,7 @@ nav {
     border-radius: 90px;
     border: 2px solid;
     border-color: #00aee2;
-    background-image: url('/image/ferdi.jpg');
+    background-image: url('/assets/image/figure3.jpg');
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -510,7 +510,7 @@ nav {
   height: 500px;
   border-radius: 65px;
   overflow: hidden;
-  background-image: url('image/Frame_Aplikasi_baru.png');
+  background-image: url('/assets/image/Frame_Aplikasi_baru.png');
   background-size: cover;
   background-position: 50% 50%;
   object-fit: cover;
@@ -564,7 +564,7 @@ nav {
   align-items: center;
   border-radius: 20px;
   transition: 700ms;
-  background-image: url("image/hp.png");
+  background-image: url('/assets/image/hp.png');
   background-size: cover;
   background-position: center;
 }
@@ -1035,7 +1035,7 @@ summary::after {
     content: "";
     width: 30px;
     height: 30px;
-    background-image: url('/image/button_arrow.png');
+    background-image: url('/assets/image/button_arrow.png');
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform 0.5s ease;
