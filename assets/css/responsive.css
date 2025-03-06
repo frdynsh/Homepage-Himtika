@@ -1,10 +1,90 @@
-@media (max-width: 768px) {
-    /* ================= Section hero ================= */
-      .hero-container {
-          padding-top: 1.5em;
-          text-align: center;
+@media only screen and (max-width: 7000px){
+	.page-wrapper{
+		overflow: hidden;
+	}
+}
+
+
+@media only screen and (max-width: 1023px){
+	.main-header .nav-outer .main-menu,
+	.sticky-header{
+		display: none !important;
+	}
+
+	.nav-outer .mobile-nav-toggler{
+		display: block;
+		margin: 0;
+		padding: 24px 0;
+	}
+	
+	.main-header .header-upper .nav-outer:before{
+		display:none;	
+	}
+
+	.main-header .dropdown > a > i{
+		display: none;
+	}
+	
+	.main-header .nav-outer{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-left: 10px;
+		width:auto;
+		float:none;	
+	}
+	
+	.main-header .nav-outer .logo-outer{
+		position:relative;
+		left:0;
+		top: 8px;
+		width:auto;
+		height:auto;
+		margin:0;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);	
+	}
+
+	.nav-outer .mobile-nav-toggler{
+		position: absolute;
+		right: 10px;
+		top: 60%;
+		transform: translateY(-50%);
+		line-height: 50px;
+		display: block;
+		margin: 0;
+		padding: 24px 0;
+	}
+
+	/* =============== section Footer ================ */
+      .footer-text{
+        display: flex;
+        position: relative;
+        gap: 60px;
+        padding: 20px 20px 0 20px;
       }
-  
+      .logo-section{
+        margin-left: 0px;
+      }
+      .section-3{
+        margin-top: -20px; 
+      }
+}
+
+@media (max-width: 768px) {
+    .live-news span{
+		display: none;
+		position: relative
+	}
+
+	.live-news .rectangle .rectangle-img,
+	.live-news .rectangle .sinergis,
+	.live-news .rectangle .rectangle-shadow{
+		display: none;
+	}
+    
+    /* ================= Section hero ================= */
       .ellipse-container {
           flex-direction: row;
       }
@@ -238,6 +318,18 @@
       }
   }
       
+  @media only screen and (min-width: 768px){
+	.main-menu .navigation > li > ul,
+	.main-menu .navigation > li > ul > li > ul{
+		display:block !important;
+		visibility:hidden;
+		opacity:0;
+	}
+	
+	.header-top .live-news{
+		position: auto;	
+	}
+}
   
   @media (min-width: 769px) and (max-width: 1024px)  {
     /* Section hi-code */
@@ -303,3 +395,14 @@
         height: 18px;
     }
   }
+
+  @media only screen and (max-width: 599px){
+	.main-header .header-top .top-left{
+		display:none;	
+	}
+	
+	.main-header .header-top .top-right{
+		width:100%;
+		text-align:center	
+	}
+}

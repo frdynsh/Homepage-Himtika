@@ -13,64 +13,126 @@
    
 </head>
 <body>
-    <!-- Top Banner dengan marquee -->
-    <div class="top-banner">
-        <div class="marquee-container">
-            <!-- <span>+ HIMTIKA KABINET SINERGIS +</span> -->
-        </div>
-        <div class="close-banner">&times;</div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="icon"></div>
+        <div class="other-icon"></div>
     </div>
 
-    <!--Start Navbar -->
-    <nav>
-        <div class="nav-container">
-            <ul class="nav-items">
-                <!-- Dropdown: Tentang Kami -->
-                <li class="dropdown">
-                    <a href="#">Tentang Kami</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Contact Me</a></li>
-                        <li><a href="#">Our History</a></li>
-                    </ul>
-                </li>
-                <!-- Dropdown: Agenda -->
-                <li class="dropdown">
-                    <a href="#">Agenda</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Upcoming Agenda</a></li>
-                    </ul>
-                </li>
-                <!-- Logo (hanya tampil di desktop) -->
-                <li class="logo">
-                    <img src="assets/image/logo.png" alt="Logo">
-                    <span>HIMTIKA</span>
-                </li>
-                <!-- Dropdown: Event -->
-                <li class="dropdown">
-                    <a href="#">Event</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Workshop</a></li>
-                        <li><a href="#">Seminar</a></li>
-                    </ul>
-                </li>
-                <!-- Dropdown: Aplikasi Publik -->
-                <li class="dropdown">
-                    <a href="#">Aplikasi Publik</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">App 1</a></li>
-                        <li><a href="#">App 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- Tombol hamburger -->
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Main Header -->
+    <header class="main-header">
+        <!-- Header Top -->
+        <div class="header-top">
+            <!-- Start Live News -->
+            <div class="live-news top">
+                <div class="auto-container clearfix">
+                    <div class="rectangle">
+                        <span class="kabinet-sinergis">Kabinet Sinergis</span>
+                        <img class="rectangle-img" src="assets/image/icon/Rectangle.svg" alt="Rectangle">
+                        <img class="rectangle-shadow" src="assets/image/icon/Shadow Rectangle.svg" alt="Shadow Rectangle"></img> <!-- Added shadow rectangle -->
+                        <img class="sinergis" src="assets/image/logo/sinergis.png" alt="Sinergis">
+                    </div>
+                    <div class="marquee">
+                        <span>Nantikan berbagai <a href="https://www.instagram.com/himtika_unsika/">Events</a> seru HIMTIKA dengan selalu mengikuti akun media sosial dan website kami!</span>
+                    </div>           
+                </div>
+            </div>
+            <!-- End Live News -->
+        </div>
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="inner-container">
+                <div class="auto-container clearfix">
+                    <!--Nav Box-->
+                    <div class="nav-outer clearfix">
+                        <div class="logo-outer">
+                            <div class="logo-header">
+                                <a href="index.html"><img src="assets/image/logo/Himtika.png" alt="" title="HIMTIKA"></a>
+                            </div>
+                            <h1>HIMTIKA</h1>
+                        </div>
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon fas fa-bars"></span></div>
+
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix pull-left">
+									<li class="dropdown"><a href="#">Tentang Kami<i class="fas fa-chevron-down arrow"></i></a>
+                                        <ul>
+                                            <li><a href="https://himtika.cs.unsika.ac.id/sejarah-himtika/">Sejarah</a></li>
+                                            <li><a href="https://himtika.cs.unsika.ac.id/logo-himtika/">Logo</a></li>
+										    <li><a href="https://himtika.cs.unsika.ac.id/visi-misi/">Visi Misi</a></li>
+									        <li><a href="https://himtika.cs.unsika.ac.id/struktur-organisasi/">Struktur Organisasi</a></li>
+									        <li><a href="https://himtika.cs.unsika.ac.id/grand-design-himtika-2024">Grand Design HIMTIKA</a></li>
+									        <li><a href="https://himtika.cs.unsika.ac.id/galeri-himtika/">Galeri HIMTIKA</a></li>
+									        <li><a href="#">Kontak Kami</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="#">Agenda<i class="fas fa-chevron-down arrow"></i></a>
+                                        <ul class="sub_menu">
+                                            <li><a href="https://himtika.cs.unsika.ac.id/himtika-awards/">Himtika Awards</a></li>
+                                        </ul>
+									</li>
+								</ul>
+								
+								<ul class="navigation pull-right clearfix">
+									<li class="dropdown"><a href="#">Events<i class="fas fa-chevron-down arrow"></i></a>
+                                        <ul class="sub_menu">
+											<li><a href="https://himtika.cs.unsika.ac.id/open-project/">Open Project</a></li>
+                                            <li><a href="https://himtika.cs.unsika.ac.id/semantik_8/">SEMANTIK</a></li>
+                                            <li><a href="https://himtika.cs.unsika.ac.id/studyclub-2024/">Study Club</a></li>
+                                            <li><a href="https://himtika.cs.unsika.ac.id/lkmmpd/">LKMM-PD</a></li>
+											<li><a href="https://himtika.cs.unsika.ac.id/pekan-it/">Pekan IT	</a></li>
+										    <li><a href="https://himtika.cs.unsika.ac.id/diesnatalis">Diesnatalis</a></li>
+										    <li><a href="https://himtika.cs.unsika.ac.id/it-bootcamp/">IT Bootcamp</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Aplikasi Publik<i class="fas fa-chevron-down arrow"></i></a>
+                                        <ul class="sub_menu">
+                                                <li><a href="https://himtika.cs.unsika.ac.id/Himtalks/">Himtalks</a></li>
+                                                <li><a href="https://himtika.cs.unsika.ac.id/hikode/">Hikode</a></li>
+											    <li><a href="https://himtika.cs.unsika.ac.id/kalendar/">Kalendar</a></li>
+											    <li><a href="https://himtika.cs.unsika.ac.id/corporation/">Corporation</a></li>
+                                                <li><a href="https://himtika.cs.unsika.ac.id/dosen/">Profil Tenaga Pendidik</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- End Navbar -->
+        <!--End Header Upper-->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon fas fa-times" style="font-size: 28px;"></span></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="assets/image/logo/Himtika.png" alt="" title=""></a></div>
+                <div class="menu-outer"></div>
+				<!--Social Links-->
+				<div class="social-links">
+					<ul class="clearfix">
+						<li>
+                            <a href="https://www.instagram.com/himtika_unsika/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/@himtikaofficial4428" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.tiktok.com/@himtika_unsika" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </li>
+					</ul>
+                </div>
+            </nav>
+        </div>
+        <!-- End Mobile Menu -->
+    </header>
+    <!-- End Main Header -->
 
     <div class="all">
         <!-- Start Hero Section -->
@@ -363,7 +425,7 @@
         </div>
       </footer>
        <!-- Footer End -->
-
+</body>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
@@ -371,5 +433,7 @@
                 once: true,
             });
         </script>
-        <script src="script.js"></script>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/scrollbar.js"></script>
+        <script src="assets/js/script.js"></script>
 </html>
