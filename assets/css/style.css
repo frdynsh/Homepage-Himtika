@@ -13,7 +13,13 @@
   body {
     background-color: #252742;
     color: #ffffff;
-}
+    overflow: hidden;
+  }
+
+  .page-wrapper{
+    overflow: hidden;
+  }
+  
 
 ul,li{
 	list-style:none;
@@ -144,19 +150,19 @@ ul,li{
 /* Main Header */
 
 .main-header{
-	position: fixed;
+	position: sticky;
 	display: block;
 	width: 100%;
 	z-index: 99999;
 	background-color:#252742;
 }
 
+/* Live News */
+
 .main-header .header-top{
 	position: relative;
 	transition: opacity 0.3s ease;
 }
-
-/* Live News */
 
 .live-news {
     background: linear-gradient(to right, #320F48, #7A25AE);
@@ -836,7 +842,7 @@ ul,li{
 /* ================= Section hero ================= */
 
 .hero-container {
-    padding-top: 12em;
+    padding-top: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
