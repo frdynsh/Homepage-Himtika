@@ -910,10 +910,11 @@ ul,li{
     gap: 10px;
     position: relative;
 }
-
-.btn {
-    color: #ffffff;
-    text-decoration: none;
+.all a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn{
     border-radius: 100px;
     border: #353767;
     background-color: #353767;
@@ -1086,7 +1087,7 @@ ul,li{
     gap: 30px;
     flex-wrap: wrap;
 } 
-.paragraph p:hover {
+.paragraph p a:hover {
   cursor: pointer;
   color: #653384;
   transition: color 0.3s ease-in-out;
@@ -1197,7 +1198,7 @@ ul,li{
 
 /* ================= Section aplikasi baru ================= */
 .frame-apk {
-  padding-top: 30px;
+  padding-top: 60px;
   position: relative;
   justify-content: center;
   display: flex;
@@ -1660,6 +1661,10 @@ ul,li{
   border 0.6s ease-in-out, 
   box-shadow 0.6s ease-in-out, 
   transform 0.3s ease-in-out;
+}
+.hi-code_btn a{
+  color: #000000;
+  text-decoration: none;
 }
 
 .hi-code_btn:hover {
