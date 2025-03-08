@@ -13,13 +13,8 @@
   body {
     background-color: #252742;
     color: #ffffff;
-    overflow: hidden;
+    overflow-x: hidden;
   }
-
-  .page-wrapper{
-    overflow: hidden;
-  }
-  
 
 ul,li{
 	list-style:none;
