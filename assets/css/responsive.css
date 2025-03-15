@@ -85,6 +85,10 @@
 	}
     
     /* ================= Section hero ================= */
+
+    .hero-container {
+        margin-top: 41%;
+    }  
       .ellipse-container {
           flex-direction: row;
       }
