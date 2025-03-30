@@ -323,8 +323,7 @@
     
       .container-accordion li label i {
         font-size: 1.4rem;
-        padding-top: 0.04rem;
-        padding-right: 0.03rem;
+        padding-left: 0;
         width: 26px;
         height: 26px;
       }
