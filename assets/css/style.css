@@ -1122,8 +1122,7 @@ ul,li{
     margin-bottom: 60px;
 }
 .sapaan-text h1 {
-    font-size: clamp(3.8rem, 2vw, 4rem);
-    
+    font-size: clamp(3.8rem, 2vw, 4rem);  
 }
 
 .sapaan-text p {
@@ -1186,16 +1185,8 @@ ul,li{
 .sapaan-overlay {
   position: absolute;
   width: 100%;
-  height: 35%;
-  bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    hsla(236, 33%, 30%, 0) 0%,  
-    hsla(236, 33%, 18%, 0.7) 60%,
-    hsla(240, 27%, 15%, 0.9) 100% 
-  );
-  z-index: 10;
-  pointer-events: none;
+  left: 0;
+  bottom: -2%;
 }
 
 /* ================= Section aplikasi baru ================= */
@@ -1711,72 +1702,90 @@ ul,li{
     color: white;
     padding: 20px;
 }
-
-/* Grid Layout untuk FAQ */
-.faq-wrapper {  
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 900px;
-    margin: auto;
-    align-items: start; 
-    gap: 35px;
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.faq-section .container-accordion {
+  position: relative;
+  z-index: 2;
 }
 
-details {
-    background: #1E1925;
-    border-radius: 15px;
-    padding: 15px;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
+.container-accordion {
+  margin: 0;
+  margin-bottom: 5em;
+  width: 600px;
+}
+.container-accordion li {
+  list-style: none;
+  width: auto;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 16px;
+  background: #1E1925;
 }
 
-/* Style untuk summary */
-summary {
-    font-size: 1rem;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
+.container-accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  justify-content: space-between;
 }
 
-summary::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url('/assets/image/button_arrow.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: transform 0.5s ease;
+.container-accordion li label i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; 
+  height: 40px;
+  padding-left: 0.05rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  color: #252742; 
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-details[open] summary::after {
-    transform: rotate(-180deg);
+.container-accordion input[type="checkbox"]:checked + label i {
+  transform: rotate(180deg);
 }
 
-/* Efek dropdown */
-.faq-answer {
-    height: 100%;
-    overflow: hidden;
-    text-align: left;
-
-    transform: translateY(-5px);
-    transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
-    padding: 0 15px;
-    color: #ddd;
-    will-change: height, opacity, transform;
+input[type="checkbox"] {
+  display: none;
+}
+.container-accordion .content {
+  color: #ffffff;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-details[open] .faq-answer {
-    max-height: 500px;;
-    max-width: 360px;
-    opacity: 1;
-    transform: translateY(0);
-    padding: 10px 1px;
+.container-accordion input[type="checkbox"]:checked + label + .content {
+  max-height: 500px;
+  opacity: 1;
+  transform: scale(1);
 }
-
+.container-accordion .content {
+  display: flex;
+  align-items: center;
+}
+.container-accordion .content p {
+  color: #ffffff;
+  max-width: 580px;
+  text-align: left;
+  font-size: 1rem;
+}
 .faq-container .faq-overlay{
   position: absolute;
   width: 100%;
@@ -1813,7 +1822,7 @@ footer {
   position: relative;
   flex-wrap: wrap;
   gap: 140px;
-  padding: 20px 20px 0 250px;
+  padding: 30px 20px 0 250px;
 }
 
 .footer-section h4 {
@@ -1840,7 +1849,7 @@ footer {
 .logo-section {
   text-align: center;
   max-width: 170px;
-  margin-left: 40px;
+  margin: 20px 0 0 40px;
 }
 
 .logo-footer {
@@ -1899,6 +1908,7 @@ footer {
 }
 
 .social-icons a {
+  text-decoration: none;
   color: white;
   margin: 0 5px;
   font-size: 20px;

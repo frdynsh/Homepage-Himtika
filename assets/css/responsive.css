@@ -99,10 +99,14 @@
           margin-right: -22px;
           text-shadow: 10px 5px 3px #00000040;
       }
-  
-      .ellipse, .ellipse-2 {
+      .ellipse {
           margin: -2px;
           width: 70px;
+          height: 70px;
+      }
+      .ellipse-2 {
+          margin: -5px;
+          width: 80px;
           height: 70px;
       }
   
@@ -195,11 +199,15 @@
       }
   
       .sapaan-image {
-          width: 100%;
+        justify-content: center;
+        width: 100%;
       }
       .sapaan-image  img{
-          max-width: 210%;
-          margin-right: -55%;
+          max-width: 180%;
+      }
+      .sapaan-overlay {
+        bottom: 6%;
+        height: 300px;
       }
       /* ================= Section aplikasi baru ================= */
       .frame-apk {
@@ -292,15 +300,33 @@
           font-weight: 500;
           color: white;
           padding: 20px;
+      }.faq-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
       }
-  
-      summary {
-          font-size: 0.9rem;
+      .container-accordion {
+        margin: -20px 0 0 0;
+        width: 100%;
       }
-  
-      summary::after {
-          width: 16px;
-          height: 16px;
+      .container-accordion li {
+        margin: 10px;
+        padding: 0.5rem;
+      }
+      .container-accordion li label span {
+        flex: 1; /* Memastikan teks mengambil ruang yang tersedia */
+        text-align: center; /* Membuat teks tetap rata tengah */
+      }
+      .container-accordion li label,
+      .container-accordion .content p {
+        font-size: 1rem;
+      }
+    
+      .container-accordion li label i {
+        font-size: 1.4rem;
+        padding-top: 0.04rem;
+        padding-right: 0.03rem;
+        width: 26px;
+        height: 26px;
       }
       .faq-container .faq-overlay{
         position: absolute;
