@@ -21,6 +21,10 @@ ul,li{
 	list-style:none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .auto-container{
 	position:static;
 	max-width:1200px;
