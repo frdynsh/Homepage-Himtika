@@ -36,11 +36,11 @@
 	
 	.main-header .nav-outer .logo-outer{
 		position:relative;
-		left:0;
-		top: 8px;
-		width:auto;
-		height:auto;
-		margin:0;
+		left: 0;
+		top: -10px;
+		width: auto;
+		height: auto;
+		margin: 0;
 		-webkit-transform: translateX(0);
 		-ms-transform: translateX(0);
 		transform: translateX(0);	
@@ -49,7 +49,7 @@
 	.nav-outer .mobile-nav-toggler{
 		position: absolute;
 		right: 10px;
-		top: 60%;
+		top: 45%;
 		transform: translateY(-50%);
 		line-height: 50px;
 		display: block;
