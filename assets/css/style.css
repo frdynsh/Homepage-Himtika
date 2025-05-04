@@ -8,14 +8,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Figtree';
-  }
-  
-  body {
-    background-color: #252742;
-    color: #ffffff;
-    overflow-x: hidden;
     text-decoration: none;
-  }
+}  
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #252742;
+  color: #ffffff;
+  overflow-x: hidden;
+}
 
 ul,li{
 	list-style:none;
