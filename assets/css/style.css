@@ -226,7 +226,7 @@ ul,li{
 }
 
 .live-news .marquee {
-    width: 100%;
+    width: 120%;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
