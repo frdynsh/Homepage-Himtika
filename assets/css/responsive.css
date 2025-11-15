@@ -223,6 +223,7 @@
       .frame-text {
           padding-top: 20px;
           text-align: center;
+          margin-bottom: 100px;
       }
       .frame-text h1 {
           font-size: 1.5rem;
@@ -235,6 +236,27 @@
       .frame-text p {
           max-width: 200px;
           font-size: 0.8rem;
+      }
+      .botao {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        padding: 4px 8px;
+      }
+
+      .botao:hover {
+        width: 45px;
+        height: 45px;
+      }
+
+      .botao:hover::after {
+        width: 12px;
+        height: 2px;
+        margin-left: -15px;
+      }
+
+      .botao:hover::before {
+        border-width: 3px;
       }
       .container_noselect {
         width: 150px;
